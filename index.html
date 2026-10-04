@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F5EEDF">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'none'; font-src 'none'; connect-src 'none'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>世界精神卫生日｜三分钟·心理状态小测｜云南大学心理协会</title>
+  <style>
+    /* 一、基础配色。字体全部来自设备本地，不加载外部资源。 */
+    :root {
+      --paper: #F5EEDF; --white: #FCFAF5; --ink: #153F59;
+      --red: #BB3E21; --gold: #E5A128; --teal: #427778;
+      --line: #D7D7C9; --muted: #546770;
+      --serif: "Noto Serif SC", "Source Han Serif SC", STSong, SimSun, serif;
+      --sans: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { min-width: 280px; background: var(--paper); -webkit-text-size-adjust: 100%; }
+    body { margin: 0; color: var(--ink); font: 16px/1.8 var(--sans); }
+    button { font: inherit; cursor: pointer; color: inherit; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+    button:disabled { cursor: default; }
+    button:focus-visible { outline: 3px solid var(--teal); outline-offset: 5px; }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { font-weight: 600; }
+    svg { display: block; }
+    .shell { width: calc(100% - 64px); max-width: 1040px; margin: 32px auto; }
+    .masthead { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 0 4px 20px; }
+    .brand { display: flex; gap: 11px; align-items: center; }
+    .brand-mark { width: 37px; height: 37px; flex: 0 0 37px; color: var(--teal); }
+    .brand-name { font-size: 15px; font-weight: 600; letter-spacing: .1em; }
+    .brand-caption { font-size: 11px; letter-spacing: .16em; color: var(--muted); }
+    .edition { text-align: right; color: var(--muted); font-size: 12px; letter-spacing: .05em; line-height: 1.7; }
+    .edition strong { font-size: 15px; color: var(--ink); font-weight: 500; }
+    .paper { position: relative; background: var(--white); border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 14px 45px rgba(21,63,89,.045); overflow: hidden; }
+    .paper::before { content: ""; display: block; height: 5px; background: var(--teal); }
+    .page { padding: 42px 52px 40px; }
+    .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--teal); font-size: 12px; letter-spacing: .16em; font-weight: 600; }
+    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .primary { display: flex; align-items: center; justify-content: space-between; gap: 18px; width: 100%; min-height: 58px; padding: 13px 22px; border: 1px solid var(--ink); border-radius: 3px; background: var(--ink); color: var(--white); font-weight: 600; transition: background .15s ease; }
+    .primary:hover { background: #24536b; }
+    .primary svg { width: 23px; height: 23px; flex: 0 0 23px; }
+    .quiet-button { min-height: 48px; padding: 9px 0; display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; font-size: 15px; }
+    .quiet-button svg { width: 18px; height: 18px; }
+    .quiet-button:disabled { opacity: .4; }
+    .footer { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 17px 4px 0; color: var(--muted); font-size: 12px; }
+    .footer-note { display: flex; align-items: center; gap: 6px; }
+    .footer-note svg { width: 14px; height: 14px; flex: 0 0 14px; }
+    .focus-heading:focus { outline: none; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    /* 二、活动封面：先说明世界精神卫生日与日常生活的联系，再进入自评。 */
+    .campaign-hero { display: grid; grid-template-columns: 1fr 240px; gap: 34px; align-items: center; padding: 28px 0 30px; }
+    .campaign-title { font: 600 45px/1.4 var(--serif); letter-spacing: .035em; }
+    .campaign-message { margin-top: 14px; font: 26px/1.6 var(--serif); color: var(--red); }
+    .campaign-description { max-width: 580px; margin-top: 18px; font-size: 16px; line-height: 1.9; }
+    .campaign-date { position: relative; text-align: center; background: var(--paper); border: 1px solid var(--line); padding: 28px 18px 23px; border-radius: 100px 100px 3px 3px; color: var(--teal); }
+    .date-digits { display: block; font: 64px/1.3 var(--serif); letter-spacing: -.045em; }
+    .date-caption { display: block; margin-top: 12px; font-size: 12px; letter-spacing: .12em; }
+    .dialogue-art { margin: 14px auto 0; width: 105px; height: 66px; }
+    .campaign-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; padding: 23px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .campaign-values h2 { font: 600 19px/1.6 var(--serif); }
+    .campaign-values h2 span { color: var(--red); font: 12px var(--sans); margin-right: 8px; }
+    .campaign-values p { margin-top: 7px; color: var(--muted); font-size: 16px; line-height: 1.8; }
+    .checkin-entry { margin-top: 27px; }
+    .checkin-entry h2 { font: 600 27px/1.5 var(--serif); }
+    .checkin-description { margin-top: 10px; font-size: 16px; }
+    .checkin-entry .intro { margin-top: 13px; }
+    .checkin-entry .privacy-line { font-size: 14px; }
+    .checkin-entry + .cover-bottom { border-top: 0; padding-top: 24px; }
+    .quiz-context { margin-bottom: 5px; color: var(--teal); font-size: 12px; letter-spacing: .06em; }
+    .campaign-takeaway { padding: 21px 24px; margin: 0 0 26px; background: #edf0e7; border-left: 3px solid var(--teal); }
+    .campaign-takeaway h3 { font: 600 23px/1.6 var(--serif); }
+    .campaign-takeaway p { font-size: 16px; margin-top: 8px; }
+    .support-note { margin-bottom: 17px; font-size: 16px; color: var(--muted); }
+    .closing-note { border-top: 1px solid var(--line); padding-top: 23px; margin-top: 28px; }
+    .closing-note h3 { font: 600 22px/1.6 var(--serif); }
+    .closing-note p { font-size: 16px; margin-top: 8px; }
+    @media (max-width: 760px) {
+      .campaign-hero { grid-template-columns: 1fr 160px; gap: 24px; }
+      .campaign-title { font-size: 35px; }
+      .campaign-message { font-size: 23px; }
+      .date-digits { font-size: 48px; }
+      .campaign-values { gap: 15px; }
+    }
+    @media (max-width: 540px) {
+      .campaign-hero { display: flex; flex-direction: column; gap: 21px; padding: 19px 0 24px; align-items: stretch; }
+      .campaign-title { font-size: 32px; letter-spacing: .015em; }
+      .campaign-message { font-size: 22px; margin-top: 9px; }
+      .campaign-description { margin-top: 13px; }
+      .campaign-date { order: -1; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; padding: 10px 16px; border-radius: 3px; }
+      .date-digits { font-size: 38px; }
+      .date-caption { margin-top: 0; font-size: 11px; letter-spacing: .03em; text-align: right; }
+      .dialogue-art { display: none; }
+      .campaign-values { grid-template-columns: 1fr; padding: 20px 0; gap: 16px; }
+      .campaign-values p { margin: 3px 0 0 25px; }
+      .campaign-values h2 { font-size: 19px; }
+      .checkin-entry { margin-top: 23px; }
+      .checkin-entry h2 { font-size: 23px; }
+      .campaign-takeaway { padding: 17px 18px; margin-bottom: 23px; }
+      .campaign-takeaway h3 { font-size: 21px; }
+    }
+    .cover-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; align-items: center; margin: 32px 0 35px; }
+    .cover-title { font-family: var(--serif); font-size: 52px; font-weight: 600; line-height: 1.42; letter-spacing: .035em; }
+    .cover-title .title-time { display: block; color: var(--red); font-size: 32px; margin-bottom: 5px; }
+    .cover-title .title-main { display: block; }
+    .subtitle { margin-top: 19px; font-size: 13px; color: var(--muted); line-height: 1.9; }
+    .intro { margin-top: 25px; line-height: 1.9; }
+    .intro strong { font-weight: 600; }
+    .intro .privacy-line { display: block; margin-top: 10px; color: var(--muted); font-size: 16px; line-height: 1.9; }
+    .illustration { align-self: stretch; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 10px; }
+    .illustration svg { width: 100%; max-width: 290px; height: auto; }
+    .illustration figcaption { color: var(--teal); font-family: var(--serif); font-size: 16px; letter-spacing: .2em; margin-top: -2px; }
+    figure { margin: 0; }
+    .cover-bottom { display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; align-items: center; padding-top: 25px; border-top: 1px solid var(--line); }
+    .facts { display: flex; justify-content: space-between; gap: 18px; max-width: 410px; }
+    .fact strong { display: block; font-family: var(--serif); font-size: 23px; font-weight: 500; line-height: 1.5; }
+    .fact span { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
+    .start-note { margin-top: 9px; font-size: 12px; text-align: center; color: var(--muted); }
+
+    /* 三、逐题作答；整个选项都是点击区域。 */
+    .quiz-page { max-width: 760px; margin: 0 auto; padding-top: 26px; }
+    .quiz-nav { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .question-counter { font-size: 14px; color: var(--muted); }
+    .question-counter strong { color: var(--ink); font-size: 20px; font-weight: 600; }
+    .track { height: 5px; border-radius: 6px; background: #e8e7dd; overflow: hidden; }
+    .track-fill { height: 100%; width: 0; background: var(--teal); border-radius: inherit; transition: width .18s ease; }
+    .question-block { margin-top: 32px; }
+    .dimension-label { color: var(--teal); font-size: 13px; letter-spacing: .06em; }
+    .dimension-code { display: inline-block; margin-right: 9px; padding-right: 12px; border-right: 1px solid var(--line); font-family: var(--serif); font-size: 17px; }
+    .question-title { font-family: var(--serif); font-size: 30px; line-height: 1.65; margin: 13px 0 12px; overflow-wrap: break-word; }
+    .question-hint { color: var(--muted); font-size: 14px; }
+    .options { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+    .option { width: 100%; min-height: 64px; display: flex; align-items: center; gap: 16px; text-align: left; padding: 13px 18px; background: transparent; border: 1px solid var(--line); border-radius: 3px; transition: background .12s ease, border-color .12s ease; font-size: 17px; }
+    .option-key { display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 50%; font: 14px var(--sans); color: var(--muted); flex: 0 0 30px; }
+    .option-label { flex: 1; }
+    .option-check { width: 21px; height: 21px; opacity: 0; color: var(--teal); flex: 0 0 21px; }
+    .option[aria-pressed="true"] { background: #eaf0e9; border-color: var(--teal); }
+    .option[aria-pressed="true"] .option-key { background: var(--teal); color: var(--white); border-color: var(--teal); }
+    .option[aria-pressed="true"] .option-check { opacity: 1; }
+    @media (hover: hover) { .option:hover { background: #f0f1e9; border-color: var(--teal); } }
+    .quiz-bottom { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 14px; color: var(--muted); font-size: 12px; }
+    .quiz-error { margin-top: 12px; color: var(--red); font-size: 14px; }
+
+    /* 四、结果：四档颜色仅提示消耗程度，不作诊断性判断。 */
+    .result-page { padding-top: 32px; }
+    .result-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+    .result-caption { color: var(--muted); font-size: 12px; }
+    .summary-card { --grade-color: var(--teal); --grade-bg: #e8eee6; background: var(--grade-bg); border-left: 4px solid var(--grade-color); border-radius: 2px; padding: 25px 28px; display: grid; grid-template-columns: 125px 1fr; gap: 26px; align-items: center; }
+    .summary-card[data-grade="1"] { --grade-color: #9a6c17; --grade-bg: #f3ead3; }
+    .summary-card[data-grade="2"] { --grade-color: #ad6338; --grade-bg: #f3e4d8; }
+    .summary-card[data-grade="3"] { --grade-color: var(--red); --grade-bg: #f1dfd6; }
+    .total-caption { font-size: 12px; color: var(--muted); }
+    .total-number { white-space: nowrap; font-size: 62px; font-family: var(--serif); line-height: 1.25; color: var(--grade-color); }
+    .total-number small { font: 15px var(--sans); color: var(--muted); padding-left: 7px; }
+    .result-title { font: 600 28px/1.6 var(--serif); }
+    .total-range { margin-top: 8px; color: var(--muted); font-size: 12px; }
+    .overall { padding: 22px 2px 0; line-height: 1.95; }
+    .result-section { margin-top: 34px; }
+    .section-title { font: 600 23px/1.6 var(--serif); display: flex; align-items: baseline; gap: 10px; margin-bottom: 17px; }
+    .section-title .section-no { font: 12px var(--sans); color: var(--teal); letter-spacing: .04em; }
+    .section-note { color: var(--muted); font-size: 12px; margin-top: -10px; margin-bottom: 17px; }
+    .dimension-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+    .dimension-card { border: 1px solid var(--line); border-radius: 3px; padding: 19px 21px 20px; }
+    .dimension-top { display: flex; align-items: center; justify-content: space-between; gap: 9px; }
+    .dimension-name { font-size: 16px; font-weight: 600; }
+    .dimension-score { white-space: nowrap; color: var(--teal); font: 23px var(--serif); }
+    .dimension-score small { color: var(--muted); font: 12px var(--sans); }
+    .dimension-meter { margin: 14px 0 12px; height: 7px; background: #e8e7dd; border-radius: 8px; overflow: hidden; }
+    .dimension-fill { height: 100%; background: var(--teal); border-radius: inherit; }
+    .dimension-card[data-level="1"] .dimension-fill { background: #b58931; }
+    .dimension-card[data-level="2"] .dimension-fill { background: #b4694d; }
+    .dimension-interpretation { font-size: 16px; line-height: 1.85; }
+    .level-label { display: inline-block; color: var(--teal); font-size: 12px; margin-bottom: 6px; }
+    .suggestions { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .suggestions li { display: flex; align-items: baseline; gap: 15px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .suggestion-no { color: var(--red); font: 17px var(--serif); flex: 0 0 20px; }
+    .help-box { background: #f1f1e8; border: 1px solid var(--line); padding: 23px 26px; border-radius: 3px; }
+    .help-box h3 { font-size: 16px; margin-bottom: 6px; }
+    .help-box p { line-height: 1.9; }
+    .help-box .contact-detail { color: #415964; font-size: 16px; }
+    .help-item + .help-item { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+    .campus-contact { margin-top: 18px; }
+    .campus-contact h4 { margin: 0 0 5px; color: var(--teal); font-size: 16px; font-weight: 600; }
+    .contact-number { white-space: nowrap; font-weight: 600; color: var(--ink); }
+    .hotline-number { font: 600 30px/1.5 var(--sans); letter-spacing: .06em; color: var(--teal); }
+    .emergency { border-left: 3px solid var(--red); margin-top: 22px; padding: 0 0 0 16px; font-size: 16px; }
+    .emergency strong { color: var(--red); font-weight: 600; }
+    .result-privacy { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 20px; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .disclaimer { margin-top: 12px; font-size: 13px; color: var(--muted); line-height: 1.9; }
+    .disclaimer strong { color: var(--ink); font-weight: 600; }
+    .result-actions { margin-top: 27px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .result-actions .primary { width: auto; min-width: 240px; }
+    .screenshot-note { font-size: 14px; color: var(--teal); }
+    noscript { display: block; max-width: 700px; padding: 25px; margin: 25px auto; border: 1px solid var(--red); background: var(--white); }
+
+    /* 五、手机优先的触控尺寸、缩放与无动画偏好。 */
+    @media (max-width: 760px) {
+      .shell { width: calc(100% - 32px); margin: 20px auto; }
+      .page { padding: 29px 27px 30px; }
+      .cover-grid { gap: 15px; grid-template-columns: 1.6fr 1fr; }
+      .cover-title { font-size: 38px; }
+      .cover-title .title-time { font-size: 27px; }
+      .cover-bottom { grid-template-columns: 1fr; gap: 24px; }
+      .facts { max-width: none; justify-content: space-around; }
+      .dimension-card { padding: 17px; }
+      .summary-card { gap: 18px; padding: 22px; grid-template-columns: 110px 1fr; }
+      .result-title { font-size: 25px; }
+    }
+    @media (max-width: 540px) {
+      .shell { width: calc(100% - 24px); margin: 16px auto 20px; }
+      .masthead { padding: 0 5px 16px; gap: 8px; }
+      .brand { gap: 8px; }
+      .brand-mark { width: 31px; height: 31px; flex-basis: 31px; }
+      .brand-name { font-size: 13px; letter-spacing: .06em; }
+      .brand-caption { font-size: 9px; letter-spacing: .08em; }
+      .edition { font-size: 10px; }
+      .edition strong { font-size: 12px; }
+      .page { padding: 25px 23px 26px; }
+      .cover-grid { position: relative; display: block; margin: 23px 0 27px; }
+      .cover-title { font-size: 34px; letter-spacing: .015em; }
+      .cover-title .title-time { font-size: 25px; margin-bottom: 7px; }
+      .cover-title .title-main { display: block; max-width: 220px; }
+      .subtitle { max-width: 238px; font-size: 12px; margin-top: 15px; }
+      .illustration { position: absolute; top: -9px; right: -9px; width: 79px; padding: 0; opacity: .82; pointer-events: none; }
+      .illustration figcaption { display: none; }
+      .intro { margin-top: 23px; font-size: 16px; }
+      .intro .privacy-line { font-size: 16px; margin-top: 11px; }
+      .cover-bottom { padding-top: 22px; gap: 22px; }
+      .fact strong { font-size: 21px; }
+      .fact span { font-size: 11px; }
+      .start-note { font-size: 12px; }
+      .footer { align-items: flex-start; gap: 8px; font-size: 10px; margin-top: 13px; }
+      .footer-note { gap: 4px; }
+      .footer-end { text-align: right; }
+      .quiz-page { padding-top: 15px; padding-bottom: 22px; }
+      .question-block { margin-top: 27px; }
+      .question-title { font-size: 26px; line-height: 1.6; min-height: 83px; margin-top: 12px; }
+      .options { margin-top: 21px; gap: 11px; }
+      .option { min-height: 62px; padding: 12px 14px; gap: 13px; }
+      .quiz-bottom { display: block; margin-top: 21px; }
+      .keyboard-tip { display: none; }
+      .result-header { align-items: flex-start; }
+      .result-caption { font-size: 11px; }
+      .summary-card { padding: 20px; grid-template-columns: 1fr; gap: 13px; }
+      .total-display { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+      .total-number { font-size: 53px; }
+      .result-title { font-size: 25px; }
+      .total-range { margin-top: 5px; }
+      .overall { padding-top: 19px; font-size: 16px; }
+      .result-section { margin-top: 29px; }
+      .section-title { font-size: 22px; margin-bottom: 15px; }
+      .dimension-grid { grid-template-columns: 1fr; gap: 13px; }
+      .dimension-card { padding: 17px 18px 18px; }
+      .help-box { padding: 18px; }
+      .help-box .contact-detail { font-size: 16px; overflow-wrap: break-word; }
+      .suggestions li { gap: 10px; font-size: 16px; }
+      .emergency { padding-left: 13px; }
+      .result-actions { flex-direction: column-reverse; gap: 15px; }
+      .result-actions .primary { width: 100%; min-width: 0; }
+    }
+    @media (max-width: 350px) {
+      .page { padding-left: 18px; padding-right: 18px; }
+      .illustration { width: 62px; right: -7px; top: -9px; }
+      .cover-title { font-size: 30px; }
+      .cover-title .title-main { max-width: 200px; }
+      .brand-caption { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+    @media print {
+      body { background: white; }
+      .shell { width: 100%; max-width: none; margin: 0; }
+      .paper { box-shadow: none; border: 0; }
+      .page { padding: 20px; }
+      .result-actions, .footer { display: none; }
+      .dimension-card, .help-box, .summary-card { break-inside: avoid; }
+      .dimension-grid { grid-template-columns: 1fr 1fr; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    /* 独立开场封面。装饰使用内联矢量图，断网仍可完整显示。 */
+    .landing-page { padding: 35px 52px 33px; background: var(--ink); color: var(--white); }
+    .landing-top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 12px; letter-spacing: .12em; color: #e5dfd0; }
+    .landing-year { color: var(--gold); }
+    .landing-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 30px; align-items: center; padding: 36px 0 28px; }
+    .landing-date { color: var(--gold); font: 30px/1.4 var(--serif); letter-spacing: .12em; margin-bottom: 18px; }
+    .landing-title { font: 500 57px/1.35 var(--serif); letter-spacing: .06em; }
+    .landing-title span { display: block; }
+    .landing-line { font: 24px/1.8 var(--serif); margin-top: 23px; color: #efe5d0; }
+    .landing-art { width: 100%; max-width: 340px; justify-self: center; }
+    .landing-bottom { display: flex; gap: 30px; align-items: center; justify-content: space-between; border-top: 1px solid #587080; padding-top: 25px; }
+    .landing-note { font-size: 16px; line-height: 1.8; color: #e5dfd0; }
+    .landing-note small { display: block; margin-top: 5px; font-size: 12px; color: #c5d0d0; }
+    .landing-bottom .primary { width: 245px; flex-shrink: 0; background: var(--white); color: var(--ink); border-color: var(--white); }
+    .landing-bottom .primary:hover { background: var(--paper); }
+    .landing-bottom .primary:focus-visible { outline-color: var(--gold); }
+    .return-cover { margin: -10px 0 15px; color: var(--teal); font-size: 13px; }
+    @media (max-width: 760px) {
+      .landing-page { padding: 30px; }
+      .landing-title { font-size: 43px; }
+      .landing-line { font-size: 21px; }
+      .landing-bottom { gap: 20px; }
+      .landing-bottom .primary { width: 210px; }
+    }
+    @media (max-width: 540px) {
+      .landing-page { padding: 24px 25px 27px; }
+      .landing-top { font-size: 10px; letter-spacing: .05em; }
+      .landing-grid { position: relative; display: block; padding: 28px 0 23px; }
+      .landing-date { font-size: 23px; margin-bottom: 12px; }
+      .landing-title { font-size: 39px; letter-spacing: .04em; }
+      .landing-line { font-size: 19px; line-height: 1.8; margin-top: 19px; }
+      .landing-art { display: block; width: 165px; height: 157px; margin: 10px auto 0; }
+      .landing-bottom { flex-direction: column; align-items: stretch; gap: 18px; padding-top: 20px; }
+      .landing-note { font-size: 15px; text-align: center; }
+      .landing-note small { margin-top: 2px; }
+      .landing-bottom .primary { width: 100%; }
+      .return-cover { margin-top: -8px; }
+    }
+    @media (max-width: 350px) { .landing-title { font-size: 33px; } .landing-page { padding-left: 20px; padding-right: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 35V19M20 26C8 26 5 19 7 9c10 0 14 7 13 17ZM20 20C20 9 26 4 35 5c0 10-5 16-15 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 35h20" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div><div class="brand-name">云南大学心理协会</div><div class="brand-caption">给心情一点被看见的时间</div></div>
+      </div>
+      <div class="edition">世界精神卫生日<br><strong>2026.10.10</strong></div>
+    </header>
+
+    <main class="paper" id="app">
+      <!-- 独立封面：点击后进入原有活动介绍，不自动计时或跳转。 -->
+      <section class="landing-page" id="landing-view" aria-labelledby="landing-title">
+        <div class="landing-top"><span>云南大学心理协会 · 校园活动</span><span class="landing-year">2026</span></div>
+        <div class="landing-grid">
+          <div>
+            <p class="landing-date">10 · 10</p>
+            <h1 class="landing-title focus-heading" id="landing-title" tabindex="-1"><span>世界</span><span>精神卫生日</span></h1>
+            <p class="landing-line">听见自己的声音，<br>也接住彼此的心情。</p>
+          </div>
+          <svg class="landing-art" viewBox="0 0 340 320" fill="none" aria-hidden="true">
+            <path d="M28 283V144a142 142 0 0 1 284 0v139" stroke="#799296" stroke-width="1.2"/>
+            <path d="M45 282V146a125 125 0 0 1 250 0v136" fill="#24536A"/>
+            <circle cx="241" cy="73" r="38" fill="#E5A128"/>
+            <path d="M69 93h132v85h-54l-33 28v-28H69V93Z" fill="#FCFAF5" stroke="#FCFAF5" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M158 154h115v78h-24v26l-32-26h-59v-78Z" fill="#427778" stroke="#F5EEDF" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M104 124c8-12 22-7 27 1 6-9 20-13 27-1 10 16-14 31-27 39-13-8-38-23-27-39Z" fill="#BB3E21"/>
+            <path d="M186 189h59m-59 15h38" stroke="#FCFAF5" stroke-width="2" stroke-linecap="round"/>
+            <path d="M21 284h298M99 299h142" stroke="#D7D7C9" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M66 224v15m-7-8h14M262 119v11m-5-5h10" stroke="#E5A128" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="95" cy="65" r="3" fill="#E5A128"/>
+          </svg>
+        </div>
+        <div class="landing-bottom">
+          <p class="landing-note">让心理健康，成为日常。<small>三分钟自我觉察 · 一份给自己的关照</small></p>
+          <button class="primary" id="enter-button" type="button"><span>进入活动</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </section>
+      <!-- 活动介绍 -->
+      <section class="page" id="cover-view" aria-labelledby="cover-title" hidden>
+        <button class="quiet-button return-cover" id="return-cover-button" type="button">← 返回封面</button>
+        <div class="eyebrow">云南大学心理协会 · 10 月 10 日校园活动</div>
+        <div class="campaign-hero">
+          <div>
+            <h1 class="campaign-title focus-heading" id="cover-title" tabindex="-1">世界精神卫生日</h1>
+            <p class="campaign-message">让心理健康，成为日常。</p>
+            <p class="campaign-description">每年 10 月 10 日是世界精神卫生日。心理健康与我们怎样休息、面对压力、与人相处息息相关。今天，邀你从一句“我最近还好吗？”开始，关注自己的感受，也多理解身边的人。</p>
+          </div>
+          <div class="campaign-date" aria-label="2026 年 10 月 10 日">
+            <span class="date-digits" aria-hidden="true">10.10</span>
+            <svg class="dialogue-art" viewBox="0 0 110 70" fill="none" aria-hidden="true"><path d="M7 10h61v35H31L16 57V45H7V10Z" fill="#FCFAF5" stroke="#427778" stroke-width="1.6" stroke-linejoin="round"/><path d="M77 24h24v36H89l-9 7V54H48v-5" stroke="#BB3E21" stroke-width="1.6" stroke-linejoin="round"/><circle cx="25" cy="27" r="2.5" fill="#427778"/><circle cx="38" cy="27" r="2.5" fill="#427778"/><circle cx="51" cy="27" r="2.5" fill="#427778"/><path d="M83 7v8m-4-4h8" stroke="#E5A128" stroke-width="2" stroke-linecap="round"/></svg>
+            <span class="date-caption">2026 · 从理解与倾听开始</span>
+          </div>
+        </div>
+        <div class="campaign-values" aria-label="今天，我们一起关注">
+          <div><h2><span>01</span>看见自己的感受</h2><p>留意情绪、睡眠和压力，给自己的需要一点空间。</p></div>
+          <div><h2><span>02</span>少一点标签</h2><p>遇到困扰时，每个人都值得被认真倾听和尊重。</p></div>
+          <div><h2><span>03</span>让求助更容易</h2><p>需要支持时，可以找人聊聊，也可以寻求专业帮助。</p></div>
+        </div>
+        <div class="checkin-entry">
+          <h2>三分钟·心理状态小测</h2>
+          <p class="checkin-description">用 12 个问题回看最近两周的生活。做完后，带走一份自我关照建议和求助信息。</p>
+          <p class="intro">这不是考试，也没有对错。<br>请按<strong>最近两周</strong>的真实情况作答。<span class="privacy-line"><strong>全程匿名</strong>：不填姓名、不填学号、不上传任何数据，结果只在你这台手机上显示。</span></p>
+        </div>
+        <div class="cover-bottom">
+          <div class="facts"><div class="fact"><strong>12 题</strong><span>四个生活维度</span></div><div class="fact"><strong>约 3 分钟</strong><span>按真实感受选择</span></div><div class="fact"><strong>全程匿名</strong><span>仅本机显示结果</span></div></div>
+          <div><button class="primary" id="start-button" type="button"><span>开始 · 关照一下自己</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><p class="start-note">自评小测，不是心理诊断</p></div>
+        </div>
+      </section>
+
+      <!-- 答题页：始终只显示一道题，选择后自动前进。 -->
+      <section class="page quiz-page" id="quiz-view" aria-labelledby="question-title" hidden>
+        <p class="quiz-context">10.10 世界精神卫生日 · 从觉察自己的近况开始</p>
+        <div class="quiz-nav"><button class="quiet-button" id="back-button" type="button"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m11 5-5 5 5 5M6 10h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>上一题</button><p class="question-counter" id="question-counter"></p></div>
+        <div class="track" id="quiz-progress" role="progressbar" aria-label="已完成题目" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0"><div class="track-fill" id="quiz-progress-fill"></div></div>
+        <div class="question-block"><p class="dimension-label" id="question-dimension"></p><h2 class="question-title focus-heading" id="question-title" tabindex="-1"></h2><p class="question-hint">回想最近两周，哪一项更接近你的感受？</p></div>
+        <div class="options" id="options" role="group" aria-labelledby="question-title"></div>
+        <p class="quiz-error" id="quiz-error" role="alert" hidden></p>
+        <div class="quiz-bottom"><span>选择后自动进入下一题，可返回修改</span><span class="keyboard-tip">键盘 1 / 2 / 3 / 4 也可作答</span></div>
+      </section>
+
+      <!-- 结果页：完整文案在页面内展示，便于截图带走。 -->
+      <section class="page result-page" id="result-view" aria-labelledby="result-title" hidden>
+        <div class="result-header"><div class="eyebrow">10.10 · 自我关照记录</div><span class="result-caption">12 / 12 · 已完成</span></div>
+        <div class="campaign-takeaway">
+          <h3>关照心理健康，从看见自己开始。</h3>
+          <p>这次小测是一次了解近况的机会。无论得分多少，你的感受都值得认真对待。世界精神卫生日的这份关照，也可以延续到每一天。</p>
+        </div>
+        <div class="summary-card" id="summary-card" data-grade="0"><div class="total-display"><div class="total-caption">本次自评得分</div><div class="total-number"><span id="total-score">0</span><small>/ 36</small></div></div><div><h2 class="result-title focus-heading" id="result-title" tabindex="-1"></h2><p class="total-range" id="total-range"></p></div></div>
+        <p class="overall" id="overall-interpretation"></p>
+        <section class="result-section" aria-labelledby="dimension-heading"><h3 class="section-title" id="dimension-heading"><span class="section-no">01</span>看看生活的四个侧面</h3><p class="section-note">每项 0—9 分，分数越高，最近越吃力。</p><div class="dimension-grid" id="dimension-results"></div></section>
+        <section class="result-section" aria-labelledby="suggestions-heading"><h3 class="section-title" id="suggestions-heading"><span class="section-no">02</span>把关照放进日常</h3><ol class="suggestions" id="suggestions-list"></ol></section>
+        <section class="result-section" aria-labelledby="help-heading">
+          <h3 class="section-title" id="help-heading"><span class="section-no">03</span>让求助有路可走</h3>
+          <p class="support-note">求助不需要达到某个分数。如果困扰持续、影响生活，或你只是希望有人陪你梳理，都可以寻求支持。</p>
+          <!-- 求助信息由活动负责人提供；后续变动请在此处统一更新。 -->
+          <div class="help-box">
+            <div class="help-item">
+              <h3>云南大学心理健康教育与咨询中心</h3>
+              <div class="campus-contact">
+                <h4>东陆校区</h4>
+                <p class="contact-detail">中心地址：文津楼A座118办公室<br>预约咨询：<strong class="contact-number">0871-65035362</strong><br>咨询时间：周一至周五<br>8:30—12:00　14:00—17:00</p>
+              </div>
+              <div class="campus-contact">
+                <h4>呈贡校区</h4>
+                <p class="contact-detail">中心地址：百家大道体育学院楼2楼3230办公室<br>预约咨询：<strong class="contact-number">0871-65931039</strong><br>咨询时间：周一至周五<br>8:30—12:00　14:00—17:00</p>
+              </div>
+            </div>
+            <div class="help-item">
+              <h3>全国心理援助热线</h3>
+              <p class="hotline-number">12356</p>
+            </div>
+          </div>
+          <p class="emergency"><strong>如果你有伤害自己的念头：</strong>请立刻告诉身边信任的人，或拨打 120 / 110，或直接到心理中心找老师。</p>
+        </section>
+        <section class="closing-note" aria-labelledby="closing-heading">
+          <h3 id="closing-heading">也给身边的人，多一点理解。</h3>
+          <p>朋友愿意说起困扰时，可以先听听，再问一句：“你希望我怎么陪你？”尊重对方的感受与隐私，少一点评判，不凭分数给人贴标签。</p>
+        </section>
+        <p class="result-privacy" id="result-intro"></p>
+        <p class="disclaimer">这是一份自评小测，<strong>不是心理诊断</strong>，也不能替代专业咨询。分数高不代表&quot;你有病&quot;，只说明最近你比较累。本次测试不收集、不上传任何个人信息。</p>
+        <div class="result-actions"><button class="primary" id="restart-button" type="button"><span>重新测一次</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 9a7 7 0 1 1-.3 5M5 4v5h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><p class="screenshot-note">可以截图带走</p></div>
+      </section>
+    </main>
+    <footer class="footer"><span class="footer-note"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2M3 7h10v7H3V7Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M8 10v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>匿名作答 · 数据不上传</span><span class="footer-end">自评小测，不替代专业咨询</span></footer>
+  </div>
+  <div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+  <noscript>请在浏览器中启用 JavaScript 后重新打开。本页仅在你的设备上计算，不收集、不上传任何个人信息。</noscript>
+  <script>
+    (function () {
+      'use strict';
+
+      // 六、内容常量。改题、改选项或改解读时，只修改此数据区。
+      // 为兼容较旧的手机内核，使用普通脚本与 ES5 语法。以下大写变量作为只读常量使用。
+      var OPTIONS = ['从不', '偶尔', '经常', '几乎每天'];
+      var QUESTIONS = [
+        { dimension: 0, text: '我觉得心里发紧、放松不下来' },
+        { dimension: 0, text: '遇到事情容易烦躁，或者想发脾气' },
+        { dimension: 0, text: '觉得自己扛着的事比能扛的多' },
+        { dimension: 1, text: '入睡困难，或者睡着了也容易醒' },
+        { dimension: 1, text: '白天没精神，靠硬撑' },
+        { dimension: 1, text: '早上醒来还是觉得累' },
+        { dimension: 2, text: '心里有事，但找不到人说' },
+        { dimension: 2, text: '和同学相处时，会觉得自己格格不入' },
+        { dimension: 2, text: '我很少参加集体活动，也不太想参加' },
+        { dimension: 3, text: '会反复否定自己，觉得自己不够好' },
+        { dimension: 3, text: '觉得"说了也没用"，不太想找人帮忙' },
+        { dimension: 3, text: '遇到心理困扰时，我不知道可以去找谁' }
+      ];
+      var DIMENSIONS = [
+        { code: 'A', name: '情绪与压力', interpretations: [
+          '情绪有起伏，但都在你能接住的范围内。',
+          '心里那根弦好像一直没松过。找一件每天固定做、不用动脑的小事——散步、洗脸、听一首歌。',
+          '紧绷已经成了常态。把"今天必须做完"改成"先做十分钟"，做完再决定要不要继续。'
+        ] },
+        { code: 'B', name: '睡眠与精力', interpretations: [
+          '睡得还行，白天有电。',
+          '睡觉快变成一件任务了。睡前一小时把手机放远一点，比强迫自己早睡更有效。',
+          '睡眠已经在拖你。别靠补觉硬扛——固定起床时间比固定睡觉时间更管用。'
+        ] },
+        { code: 'C', name: '人际与联结', interpretations: [
+          '你身边有人可以说说话。',
+          '想说的不少，说出口的很少。这周找一个人，只聊十分钟也算。',
+          '有种"在人群里还是一个人"的累。不用逼自己合群，先找到一个让你放松的人就够。'
+        ] },
+        { code: 'D', name: '自我与求助', interpretations: [
+          '你对自己还算温和，也知道遇到事可以找谁。',
+          '你对自己的要求，比任何人都高。把心里那句批评写下来，再看看它站不站得住。',
+          '你习惯了一个人扛。心理中心的预约不是"有病才去"，是给状态不好的人一个说话的地方。'
+        ] }
+      ];
+      var TOTAL_LEVELS = [
+        { min: 0, max: 8, title: '状态挺稳', text: '最近你的状态比较平稳，情绪、睡眠、人际这几块都没给你添太多麻烦。保持现在让你舒服的节奏就好，不用额外做什么。' },
+        { min: 9, max: 17, title: '有点累，但还在正常范围', text: '有一些消耗在发生，还没到影响生活的程度。多半是这学期的事堆在了一起。给自己留一点"什么都不做"的空白，一小时也算。' },
+        { min: 18, max: 26, title: '最近偏紧', text: '压力已经在几个方面同时出现了。这不是你不够坚强，是负载确实偏重。这周试着先把一件事往后放，不要全都扛在同一天。' },
+        { min: 27, max: 36, title: '你最近真的很辛苦', text: '你承受的比你表现出来的多。这时候找人说说话不是示弱，是给自己减负。心理中心可以预约，也可以先找一个你信得过的人。' }
+      ];
+      var DIMENSION_LEVELS = ['平顺', '吃紧', '吃力'];
+      var SUGGESTIONS = [
+        '今晚提前 30 分钟把手机放下',
+        '这周找出一个人，跟他说一件真事（不用是大事）',
+        '把最重的那件事，拆成今天能做完的一小块'
+      ];
+      var INTRO = '这不是考试，也没有对错。请按最近两周的真实情况作答。全程匿名：不填姓名、不填学号、不上传任何数据，结果只在你这台手机上显示。';
+      var STORAGE_KEY = 'ynu-mental-check-back-v1';
+
+      // 七、临时状态。仅暂存选项分值以支持“上一题”，不记录时间、身份、设备或结果。
+      // 封面、完成、重新测以及退出页面时均删除本页的临时记录，不支持跨刷新恢复。
+      // 浏览器禁用 sessionStorage 时，自动退回页面内存；不影响答题。
+      var answers = [];
+      var questionIndex = 0;
+      var currentView = 'landing';
+      var locked = false;
+      var transitionTimer = null;
+      var lastInteraction = 0;
+      var byId = function (id) { return document.getElementById(id); };
+
+      function clearTemporaryAnswers() {
+        try { window.sessionStorage.removeItem(STORAGE_KEY); } catch (ignored) {}
+      }
+      function saveTemporaryAnswers() {
+        try { window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(answers)); } catch (ignored) {}
+      }
+      function restoreForBack() {
+        try {
+          var stored = JSON.parse(window.sessionStorage.getItem(STORAGE_KEY));
+          if (!Array.isArray(stored) || stored.length !== answers.length) return;
+          for (var i = 0; i < stored.length; i++) {
+            if (stored[i] !== answers[i] || typeof stored[i] !== 'number' || stored[i] < 0 || stored[i] > 3 || stored[i] % 1 !== 0) return;
+          }
+          answers = stored.slice();
+        } catch (ignored) {}
+      }
+
+      // 八、纯计分函数，与界面渲染分离；缺答或无效值不得生成结果。
+      function calculateScores(values) {
+        if (values.length !== QUESTIONS.length) return null;
+        var scores = [0, 0, 0, 0];
+        var total = 0;
+        for (var i = 0; i < QUESTIONS.length; i++) {
+          var value = values[i];
+          if (typeof value !== 'number' || value % 1 !== 0 || value < 0 || value > 3) return null;
+          scores[QUESTIONS[i].dimension] += value;
+          total += value;
+        }
+        var level = 0;
+        while (level < TOTAL_LEVELS.length - 1 && total > TOTAL_LEVELS[level].max) level++;
+        return { total: total, dimensions: scores, level: level };
+      }
+      function dimensionLevel(score) { return score <= 3 ? 0 : (score <= 6 ? 1 : 2); }
+
+      // 九、视图渲染。动态文字一律使用 textContent，不拼接来自用户的 HTML。
+      function showView(name, headingId) {
+        currentView = name;
+        byId('landing-view').hidden = name !== 'landing';
+        byId('cover-view').hidden = name !== 'cover';
+        byId('quiz-view').hidden = name !== 'quiz';
+        byId('result-view').hidden = name !== 'result';
+        if (headingId) {
+          try { byId(headingId).focus({ preventScroll: true }); } catch (ignored) { byId(headingId).focus(); }
+        }
+        window.scrollTo(0, 0);
+      }
+      function makeElement(tag, className, text) {
+        var element = document.createElement(tag);
+        if (className) element.className = className;
+        if (typeof text === 'string') element.textContent = text;
+        return element;
+      }
+      function renderQuestion() {
+        var question = QUESTIONS[questionIndex];
+        var dimension = DIMENSIONS[question.dimension];
+        byId('question-counter').innerHTML = '第 <strong>' + (questionIndex + 1) + '</strong> / ' + QUESTIONS.length + ' 题';
+        byId('question-dimension').textContent = '';
+        byId('question-dimension').appendChild(makeElement('span', 'dimension-code', dimension.code));
+        byId('question-dimension').appendChild(document.createTextNode(dimension.name));
+        byId('question-title').textContent = question.text;
+        byId('back-button').disabled = questionIndex === 0 || locked;
+        byId('quiz-error').hidden = true;
+        var completed = answers.length;
+        byId('quiz-progress').setAttribute('aria-valuenow', String(completed));
+        byId('quiz-progress').setAttribute('aria-valuetext', '已回答 ' + completed + ' 题，共 ' + QUESTIONS.length + ' 题');
+        byId('quiz-progress-fill').style.width = (completed / QUESTIONS.length * 100) + '%';
+        var container = byId('options');
+        container.textContent = '';
+        OPTIONS.forEach(function (label, value) {
+          var button = makeElement('button', 'option');
+          button.type = 'button';
+          button.setAttribute('data-value', String(value));
+          button.setAttribute('aria-pressed', answers[questionIndex] === value ? 'true' : 'false');
+          button.appendChild(makeElement('span', 'option-key', String(value + 1)));
+          button.appendChild(makeElement('span', 'option-label', label));
+          var check = makeElement('span', 'option-check');
+          check.setAttribute('aria-hidden', 'true');
+          check.innerHTML = '<svg viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          button.appendChild(check);
+          button.addEventListener('click', function (event) {
+            if (event.detail > 1) return; // 连点产生的第二次 click 不得误答下一题。
+            chooseAnswer(value);
+          });
+          container.appendChild(button);
+        });
+        showView('quiz', 'question-title');
+        byId('announcer').textContent = '第 ' + (questionIndex + 1) + ' 题，共 ' + QUESTIONS.length + ' 题。';
+      }
+      function renderResults(result) {
+        var totalLevel = TOTAL_LEVELS[result.level];
+        byId('total-score').textContent = String(result.total);
+        byId('result-title').textContent = totalLevel.title;
+        byId('overall-interpretation').textContent = totalLevel.text;
+        byId('summary-card').setAttribute('data-grade', String(result.level));
+        byId('total-range').textContent = '本档区间 ' + totalLevel.min + '—' + totalLevel.max + ' 分 · 自评参考';
+        byId('dimension-results').textContent = '';
+        DIMENSIONS.forEach(function (dimension, index) {
+          var score = result.dimensions[index];
+          var level = dimensionLevel(score);
+          var card = makeElement('article', 'dimension-card');
+          card.setAttribute('data-level', String(level));
+          var top = makeElement('div', 'dimension-top');
+          top.appendChild(makeElement('h3', 'dimension-name', dimension.name));
+          var scoreElement = makeElement('span', 'dimension-score', String(score));
+          scoreElement.appendChild(makeElement('small', '', ' / 9'));
+          top.appendChild(scoreElement);
+          card.appendChild(top);
+          var meter = makeElement('div', 'dimension-meter');
+          meter.setAttribute('role', 'meter');
+          meter.setAttribute('aria-label', dimension.name);
+          meter.setAttribute('aria-valuemin', '0');
+          meter.setAttribute('aria-valuemax', '9');
+          meter.setAttribute('aria-valuenow', String(score));
+          meter.setAttribute('aria-valuetext', score + ' 分，满分 9 分，' + DIMENSION_LEVELS[level]);
+          var fill = makeElement('div', 'dimension-fill');
+          fill.style.width = (score / 9 * 100) + '%';
+          meter.appendChild(fill);
+          card.appendChild(meter);
+          card.appendChild(makeElement('span', 'level-label', DIMENSION_LEVELS[level]));
+          card.appendChild(makeElement('p', 'dimension-interpretation', dimension.interpretations[level]));
+          byId('dimension-results').appendChild(card);
+        });
+        byId('suggestions-list').textContent = '';
+        SUGGESTIONS.forEach(function (suggestion, index) {
+          var item = makeElement('li');
+          var number = makeElement('span', 'suggestion-no', '0' + (index + 1));
+          number.setAttribute('aria-hidden', 'true');
+          item.appendChild(number);
+          item.appendChild(makeElement('span', '', suggestion));
+          byId('suggestions-list').appendChild(item);
+        });
+        byId('result-intro').textContent = INTRO;
+        clearTemporaryAnswers();
+        answers = []; // 结果只保留在页面显示中，不保存原始答题记录。
+        showView('result', 'result-title');
+        byId('announcer').textContent = '已完成。总分 ' + result.total + ' 分，' + totalLevel.title + '。';
+      }
+
+      // 十、交互。短暂锁定选择，防止连续点击、长按按键导致跳题。
+      function chooseAnswer(value) {
+        if (currentView !== 'quiz' || locked || value < 0 || value > 3) return;
+        if (Date.now() - lastInteraction < 300) return;
+        lastInteraction = Date.now();
+        locked = true;
+        answers[questionIndex] = value;
+        saveTemporaryAnswers();
+        byId('back-button').disabled = true;
+        var buttons = byId('options').querySelectorAll('button');
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].disabled = true;
+          buttons[i].setAttribute('aria-pressed', Number(buttons[i].getAttribute('data-value')) === value ? 'true' : 'false');
+        }
+        var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        transitionTimer = window.setTimeout(function () {
+          transitionTimer = null;
+          locked = false;
+          if (questionIndex < QUESTIONS.length - 1) {
+            questionIndex++;
+            renderQuestion();
+          } else {
+            var result = calculateScores(answers);
+            if (result) { renderResults(result); }
+            else {
+              for (var index = 0; index < QUESTIONS.length; index++) {
+                if (typeof answers[index] !== 'number') { questionIndex = index; break; }
+              }
+              renderQuestion();
+              byId('quiz-error').textContent = '还有题目未完成，请选择后继续。';
+              byId('quiz-error').hidden = false;
+            }
+          }
+        }, reducedMotion ? 80 : 220);
+      }
+      function startQuiz() {
+        if (transitionTimer !== null) window.clearTimeout(transitionTimer);
+        transitionTimer = null;
+        clearTemporaryAnswers();
+        answers = [];
+        questionIndex = 0;
+        locked = false;
+        lastInteraction = 0;
+        renderQuestion();
+      }
+      byId('enter-button').addEventListener('click', function () { showView('cover', 'cover-title'); });
+      byId('return-cover-button').addEventListener('click', function () { showView('landing', 'landing-title'); });
+      byId('start-button').addEventListener('click', startQuiz);
+      byId('restart-button').addEventListener('click', startQuiz);
+      byId('back-button').addEventListener('click', function () {
+        if (locked || currentView !== 'quiz' || questionIndex === 0) return;
+        restoreForBack();
+        questionIndex--;
+        lastInteraction = 0;
+        renderQuestion();
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.repeat || event.ctrlKey || event.altKey || event.metaKey || event.shiftKey || event.isComposing) return;
+        var key = event.key || String.fromCharCode(event.keyCode);
+        if (currentView === 'quiz' && /^[1-4]$/.test(key)) {
+          event.preventDefault();
+          chooseAnswer(Number(key) - 1);
+        }
+      });
+      window.addEventListener('pagehide', clearTemporaryAnswers);
+      clearTemporaryAnswers();
+    }());
+  </script>
+</body>
+</html>
